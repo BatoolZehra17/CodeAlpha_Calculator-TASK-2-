@@ -1,0 +1,53 @@
+<!--Task 2: A calculator with basic airthmetic functionalities like addition ,subtraction,multiplication & division-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./images/logo.jpeg" type="image/x-icon">
+</head>
+<body>
+    <table cellpadding="10" cellspacing="0">
+        <div class="calc">
+        <tr>
+            <td colspan="4"><input type="text" name="text" id="display"></td>
+        </tr>
+        <br><br><br>
+        <tr>
+            <th><button onclick="clearDisplay()" class="c-button">AC</button></th>
+            <th><button onclick="deleteDisplay()" class="operator">DE</button></th>
+            <th><button onclick="appendToDisplay('%')" class="operator">%</button></th>
+            <th><button onclick="appendToDisplay('/')" class="operator">/</button></th>
+        </tr>
+            <tr>
+                <th><button onclick="appendToDisplay('7')" class="num">7</button></th>
+                <th><button onclick="appendToDisplay('8')"class="num">8</button></th>
+                <th><button onclick="appendToDisplay('9')" class="num">9</button></th>
+                <th><button onclick="appendToDisplay('+')" class="operator">+</button></th>
+            </tr>
+            <tr>
+                <th><button onclick="appendToDisplay('4')" class="num">4</button></th>
+                <th><button onclick="appendToDisplay('5')" class="num">5</button></th>
+                <th><button onclick="appendToDisplay('6')" class="num">6</button></th>
+                <th><button onclick="appendToDisplay('-')" class="operator">-</button></th>
+            </tr>
+            <tr>
+                <th><button onclick="appendToDisplay('1')" class="num">1</button></th>
+                <th><button onclick="appendToDisplay('2')" class="num">2</button></th>
+                <th><button onclick="appendToDisplay('3')" class="num">3</button></th>
+                <th><button onclick="appendToDisplay('*')"class="operator">*</button></th>
+            </tr>
+            <tr>
+                <th><button onclick="appendToDisplay('00')" class="num">00</button></th>
+                <th><button onclick="appendToDisplay('0')"class="num">0</button></th>
+                <th><button onclick="appendToDisplay('.')" class="num">.</button></th>
+                <th><button  onclick="calculate()"class="operator">=</button></th>
+            </tr>
+        
+    </div>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
